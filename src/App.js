@@ -1,26 +1,50 @@
 import React, {Component} from 'react'
-import logo from './logo.svg';
+import Nav from './Nav'
+import Aside from './Aside'
+import Container from './Container'
+import Attractions from './Attractions'
+import { Route } from 'react-router-dom'
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  constructor() {
+    super()
+    this.state = {
+      attractions: []
+    }
+  }
+
+  getAllAttractions = (array) => {
+    this.setState({
+      attractions: array
+    })
+  }
+
+  render() {
+    return (
+      <main className='app'>
+        <Nav />
+        <Route exact path='/' render={() => {
+          return (
+            <div className='main-info'>
+            <Aside getAllAttractions={this.getAllAttractions}/>
+            <Container/>
+          </div>
+          )
+        }}
+        />
+       <Route exact path='/attractions' render={() => {
+         return (
+           <div className='main-info'>
+             <Aside />
+             <Attractions allAttractions={this.state.attractions}/>
+           </div>
+         )
+       }}
+       />
+      </main>
+    )
+  }
 }
 
 export default App;
