@@ -1,0 +1,33 @@
+.attraction-details-container {
+  display: flex;
+}
+
+.attraction-details-img {
+  margin: 30px;
+  margin-top: 6%;
+}
+
+.attraction-address {
+  font-size: 25px;
+  margin-left: 15px;
+}
+
+.attraction-title {
+  font-size: 40px;
+  margin-left: 15px;
+}
+
+.attraction-text {
+  font-size: 30px;
+  width: 60vw;
+  margin-left: 15px;
+}
+
+.attraction-button {
+  height: 40px;
+  width: 250px;
+  margin: 20px;
+  border: 2px solid blue;
+  font-size: 25px;
+  border-radius: 8px;
+}

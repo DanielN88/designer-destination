@@ -1,0 +1,6 @@
+.attraction-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 15px;
+  overflow: auto;
+}
