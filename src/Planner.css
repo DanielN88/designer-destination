@@ -1,0 +1,12 @@
+.planner-info {
+  height: 90vh;
+  width: 100vw;
+  display: flex;
+}
+
+.planner-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 15px;
+  overflow: auto;
+}

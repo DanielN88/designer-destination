@@ -9,7 +9,9 @@ const Nav = () => {
       <h1 className='nav-title'>Welcome to Designer Destination</h1>
     </div>
     <div className='nav-button-container'>
+      <NavLink to='/'>
       <button className='nav-button'>Home</button>
+      </NavLink>
       <NavLink to='/planner'>
       <button className='nav-button'>Planner</button>
       </NavLink>
