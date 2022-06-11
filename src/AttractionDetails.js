@@ -55,7 +55,6 @@ class AttractionDetails extends Component {
         <h3 className='attraction-address'>{this.state.attractionDetails.address.house_number} {this.state.attractionDetails.address.road}, {this.state.attractionDetails.address.county} {this.state.attractionDetails.address.state} {this.state.attractionDetails.address.postcode}</h3>
         <p className='attraction-text'>{this.state.attractionDetails.wikipedia_extracts.text}</p>
         {this.renderButton()}
-        <button className='attraction-button'>Recomend to others</button>
       </div>
       <div className='attraction-details-img'>
         <img src={this.state.attractionDetails.preview.source}/>

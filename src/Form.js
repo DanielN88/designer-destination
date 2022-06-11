@@ -25,16 +25,16 @@ class Form extends Component {
   render() {
     return (
       <div>
-        <form>
-          <h3>Search Parameters</h3>
-          <div>
-            <label> Choose a city
-          <input type='text' placeholder='City' name='city' value={this.state.city} onChange={event => this.handleChange(event)} required/>
+        <form className='form-container'>
+          <h3 className='form-title'>Search Parameters</h3>
+          <div className='form-selector'>
+            <label className='form-label'> Choose a city
+          <input type='text' placeholder='City' name='city' value={this.state.city} onChange={event => this.handleChange(event)}/>
             </label>
           </div>
          
-          <div>
-          <label> Choose a radius
+          <div className='form-selector'>
+          <label className='form-label'> Choose a radius
             <select name='radius' value={this.state.radius} onChange={event => this.handleChange(event)}>
               <option value=''>Radius</option>
               <option value='500'>500</option>
@@ -44,8 +44,8 @@ class Form extends Component {
           </label>
           </div>
 
-          <div>
-          <label>Choose an Attraction
+          <div className='form-selector'>
+          <label className='form-label'>Choose attraction
           <select name='attraction' value={this.state.attraction} onChange={event => this.handleChange(event)}>
             <option value=''>Attraction</option>
             <option value='accomodations'>Accomodations</option>
@@ -64,8 +64,8 @@ class Form extends Component {
           </label>
           </div>
 
-          <div>
-          <label> Choose a rating, 3 is highest
+          <div className='form-selector'>
+          <label className='form-label'> Choose a rating
           <select name='rating' value={this.state.rating} onChange={event => this.handleChange(event)}>
             <option value=''>Rating</option>
             <option value='3'>3</option>
@@ -76,8 +76,8 @@ class Form extends Component {
           </div>
           
         </form>
-         <NavLink to='/attractions'>
-          <button type='submit' onClick={(e) => this.getFormInputs(e)}>Submit</button>
+         <NavLink className='form-button-container' to='/attractions'>
+          <button className='form-button' onClick={(e) => this.getFormInputs(e)}>Submit</button>
          </NavLink>
       </div>
       

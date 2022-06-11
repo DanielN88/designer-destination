@@ -6,7 +6,7 @@ const PlannerAside = (props) => {
     return (
       <aside>
       <div className='planner-aside'>
-        <p>Go ahead and add some things</p>
+        <p className='planner-aside-text'>You don't have any planned trips yet. Go ahead and add some attractions</p>
       </div>
       </aside>
     )
@@ -14,7 +14,7 @@ const PlannerAside = (props) => {
     return (
       <aside>
       <div className='planner-aside'>
-        <p>Looks like you have a pretty good trip planned, ready to start booking fligts?</p>
+        <p className='planner-aside-text'>Looks like you have a pretty good trip planned, ready to start booking flights?</p>
       </div>
       </aside>
     )

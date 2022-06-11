@@ -1,5 +1,10 @@
 .trip-suggest {
-  margin-top: 20%;
+  margin-top: 10%;
+}
+
+.trip-suggest-title {
+  font-size: 35px;
+  text-align: center;
 }
 
 .suggest-container {
@@ -7,9 +12,51 @@
   justify-content: center;
 }
 
-.suggest-card {
-  height: 17vh;
+
+.suggest-card-one {
+  height: 23vh;
   width: 17vw;
   border: 1px solid black;
+  border-radius: 10px;
   margin: 10px;
+  background-image: url('./assets/vegas.jpg');
+  background-size:cover;
+}
+
+.suggest-card-two {
+  height: 23vh;
+  width: 17vw;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 10px;
+  background-image: url('./assets/denver.jpg');
+  background-size:cover;
+}
+
+.suggest-card-three {
+  height: 23vh;
+  width: 17vw;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 10px;
+  background-image: url('./assets/miami.jpg');
+  background-size:cover;
+}
+
+.suggest-card-four {
+  height: 23vh;
+  width: 17vw;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 10px;
+  background-image: url('./assets/sf.jpg');
+  background-size:cover;
+}
+
+.suggest-card-text {
+  font-size: 20px;
+  margin: 12px;
+  color: white;
+  background-color: black; 
+  opacity: 80% 
 }

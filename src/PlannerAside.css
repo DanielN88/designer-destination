@@ -4,3 +4,10 @@ aside {
   border: solid 1px black;
 }
 
+.planner-aside-text {
+  font-size: 25px;
+  margin: 10px;
+  font-weight: 600;
+}
+
+

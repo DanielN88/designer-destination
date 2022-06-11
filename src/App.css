@@ -1,5 +1,11 @@
 html {
   margin: 0px;
+  overflow: hidden;
+}
+
+main {
+  background-image: url('./assets/background-beach.jpg');
+  background-size: cover;
 }
 
 .App {
