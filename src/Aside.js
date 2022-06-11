@@ -6,7 +6,7 @@ const Aside= (props) => {
   return (
     <div>
       <aside>
-        <Form getAllAttractions={props.getAllAttractions}/>
+        <Form updateAppInputs={props.updateAppInputs}/>
      </aside>
     </div>
   )

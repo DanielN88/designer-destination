@@ -1,5 +1,8 @@
 .attraction-card-container {
+  height: 90vh;
+  width: 78vw;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   margin: 15px;
   overflow: auto;

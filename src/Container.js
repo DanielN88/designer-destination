@@ -3,11 +3,11 @@ import Usage from './Usage'
 import TripSuggest from './TripSuggest'
 import './Container.css'
 
-const Container = () => {
+const Container = (props) => {
   return (
     <div className='container'>
       <Usage />
-      <TripSuggest />
+      <TripSuggest handleSuggestTrip={props.handleSuggestTrip}/>
     </div>
   )
 }
