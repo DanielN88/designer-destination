@@ -5,7 +5,7 @@ import './Planner.css'
 const Planner = (props) => { 
   if (props.planner.length === 0) {
     return (
-      <p>Add some attractions!</p>
+      <p className='planner-text'>Your trip attractions will be displayed here. Add some attractions!</p>
     )
   } else if (props.planner) {
     const plannerCards = props.planner.map(attraction => {

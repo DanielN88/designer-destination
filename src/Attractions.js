@@ -111,21 +111,21 @@ class Attractions extends Component {
   render() {
    if (!this.props.inputData.city || !this.props.inputData.radius || !this.props.inputData.attraction || !this.props.inputData.rating) {
       return (
-        <div>
-          <p>Whoops looks like all the inputs werent filled out. Please head back and fill out all the info.</p>
+        <div className='attraction-text'>
+          <p>Whoops looks like all of the inputs weren't filled out. Please head back and fill out all the inputs before submitting.</p>
           <NavLink to='/'>
-            <button>Return to Search</button>
+            <button className='attraction-button' >Return to Search</button>
           </NavLink>
         </div>
       )
     } else if (this.state.isError) {
       return (
         <div>
-          <p>Something went wrong behind the scenes, please try again later</p>
+          <p className='attraction-text'>You might have spelled the city name wrong or something went wrong behind the scenes. Please try again</p>
         </div>
       )
     } else if (this.state.allNewAttractions.length === 0) {
-      return <p>Try expanding your search radius and rating</p>
+      return <p className='attraction-text'>Try expanding your search radius and rating</p>
     }  else {
       const attractionCards = this.state.allNewAttractions.map(attraction => {
         return (

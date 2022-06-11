@@ -7,3 +7,17 @@
   margin: 15px;
   overflow: auto;
 }
+
+.attraction-text {
+  font-size: 40px;
+  margin: 10px;
+  font-weight: 600;
+}
+
+.attraction-button {
+  font-size: 20px;
+  border: 2px solid black;
+  border-radius: 6px;
+  width: 120px;
+  height: 38px;
+}

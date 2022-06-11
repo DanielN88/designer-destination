@@ -6,10 +6,10 @@ const AttractionAside = () => {
   return (
     <aside>
     <div className='attraction-aside'>
-      <p className='thing'>Didn't find what you were looking for? Try searching again with different parameters.</p>
+      <p className='attraction-aside-text'>Didn't find what you were looking for? Try searching again with different parameters.</p>
     </div>
       <NavLink to='/'>
-        <button>Return Home</button>
+        <button className='attraction-aside-button'>Return Home</button>
       </NavLink>
     </aside>
   )
