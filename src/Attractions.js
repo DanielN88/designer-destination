@@ -9,35 +9,82 @@ class Attractions extends Component {
     super()
     this.state = {
       allNewAttractions: [],
+      isError: false
     }
   }
 
   componentDidMount = () => {
-    this.getLocation()
+    if (!this.props.inputData.city || !this.props.inputData.radius || !this.props.inputData.attraction || !this.props.inputData.rating) return
+    const city = this.props.inputData.city.split(' ').join('%20')
+    this.getLocation(city)
   }
 
-  getLocation = (event) => {
-    fetch('https://api.opentripmap.com/0.1/en/places/geoname?name=los%20angelos&country=us&apikey=5ae2e3f221c38a28845f05b6558bf2c5773e5c69819182775882814a')
+  getLocation = (city) => {
+    fetch(`https://api.opentripmap.com/0.1/en/places/geoname?name=${city}&country=us&apikey=5ae2e3f221c38a28845f05b6558bf2c5773e5c69819182775882814a`)
     .then((response) => {
-      return response.json()
+      if (response.ok) {
+        return response.json();
+      } else {
+        this.setState((prevState) => {
+          return {
+          allNewAttractions: [prevState.allNewAttractions],
+          isError: true
+          }
+        });
+        throw Error(response.statusText);
+      }
     }).then(data => {
-      this.getAttractions()
+      const lat = data.lat
+      const lon = data.lon
+      this.getAttractions(lat, lon)
+    }).catch((err) => {
+      console.log(err)
     })
   }
 
-  getAttractions = () => {
-    fetch('https://api.opentripmap.com/0.1/en/places/radius?radius=500&lon=-118.24368&lat=34.05223&kinds=theatres_and_entertainments&rate=3&apikey=5ae2e3f221c38a28845f05b6558bf2c5773e5c69819182775882814a')
+  getAttractions = (lat, lon) => {
+    fetch(`https://api.opentripmap.com/0.1/en/places/radius?radius=${this.props.inputData.radius}&lon=${lon}&lat=${lat}&kinds=${this.props.inputData.attraction}&rate=3&apikey=5ae2e3f221c38a28845f05b6558bf2c5773e5c69819182775882814a`)
     .then((response) => {
-      return response.json()
+      if (response.ok) {
+        return response.json();
+      } else {
+        this.setState((prevState) => {
+          return {
+          allNewAttractions: [prevState.allNewAttractions],
+          isError: true
+          }
+        });
+        throw Error(response.statusText);
+      }
     }).then(data => {
-      this.getAttractionDetails(data)
+      if (data.features.length === 0) {
+        return
+      } else if (data.features.length <= 7 ) {
+        return this.getAttractionDetails(data.features)
+      } else if (data.features.length >= 8) {
+        const alteredData = data.features.slice(0, 8)
+        return this.getAttractionDetails(alteredData)
+      }
+    })
+    .catch((err) => {
+      console.log(err)
     })
   }
 
   getAttractionDetails = (data) => {
-    data.features.forEach(attraction => {
+    data.forEach(attraction => {
      return fetch(`https://api.opentripmap.com/0.1/en/places/xid/${attraction.properties.xid}?apikey=5ae2e3f221c38a28845f05b6558bf2c5773e5c69819182775882814a`).then((response) => {
-        return response.json()
+      if (response.ok) {
+        return response.json();
+      } else {
+        this.setState((prevState) => {
+          return {
+          allNewAttractions: [prevState.allNewAttractions],
+          isError: true
+          }
+        });
+        throw Error(response.statusText);
+      }
       }).then(dataId => {
         this.setState((prevState) => {
           return {
@@ -48,6 +95,8 @@ class Attractions extends Component {
             allNewAttractions: [...prevState.allNewAttractions, dataId],
           }
         })
+      }).catch((err) => {
+        console.log(err)
       })
     })
   }
@@ -60,6 +109,24 @@ class Attractions extends Component {
   }
 
   render() {
+   if (!this.props.inputData.city || !this.props.inputData.radius || !this.props.inputData.attraction || !this.props.inputData.rating) {
+      return (
+        <div>
+          <p>Whoops looks like all the inputs werent filled out. Please head back and fill out all the info.</p>
+          <NavLink to='/'>
+            <button>Return to Search</button>
+          </NavLink>
+        </div>
+      )
+    } else if (this.state.isError) {
+      return (
+        <div>
+          <p>Something went wrong behind the scenes, please try again later</p>
+        </div>
+      )
+    } else if (this.state.allNewAttractions.length === 0) {
+      return <p>Try expanding your search radius and rating</p>
+    }  else {
       const attractionCards = this.state.allNewAttractions.map(attraction => {
         return (
           <NavLink to={`/attractions/${attraction.xid}`}  key={attraction.xid} className='card-navs'>
@@ -76,6 +143,7 @@ class Attractions extends Component {
       return <div className='attraction-card-container'>
               {attractionCards}
             </div> 
+    }
   }
 }
 

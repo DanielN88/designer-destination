@@ -3,8 +3,10 @@ import Card from './Card'
 import './Planner.css'
 
 const Planner = (props) => { 
-  if (!props.planner) {
-    <p>Add some attractions!</p>
+  if (props.planner.length === 0) {
+    return (
+      <p>Add some attractions!</p>
+    )
   } else if (props.planner) {
     const plannerCards = props.planner.map(attraction => {
       return (
@@ -19,7 +21,7 @@ const Planner = (props) => {
       )
     })
     return (
-      <div className='planer-container'>
+      <div className='planner-container'>
         {plannerCards}
       </div>
     )

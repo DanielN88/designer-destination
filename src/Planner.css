@@ -10,3 +10,10 @@
   margin: 15px;
   overflow: auto;
 }
+
+.planner-card {
+  height: 400px;
+  width: 400px;
+  border: 2px solid black;
+  margin: 15px;
+}

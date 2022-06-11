@@ -4,7 +4,9 @@ import Aside from './Aside'
 import Container from './Container'
 import Attractions from './Attractions'
 import AttractionDetails from './AttractionDetails'
+import AttractionAside from './AttractionAside'
 import Planner from './Planner'
+import PlannerAside from './PlannerAside'
 import { Route } from 'react-router-dom'
 import './App.css';
 
@@ -13,7 +15,11 @@ class App extends Component {
     super()
     this.state = {
       attractions: [],
-      planner: {}
+      planner: [],
+      city: '',
+      radius: '',
+      attraction: '',
+      rating: ''
     }
   }
 
@@ -27,9 +33,39 @@ class App extends Component {
   this.setState((prevState) => {
     return {
       attractions: prevState.attractions,
-      planner: [attraction]
+      planner: [...this.state.planner, attraction],
+      city: prevState.city,
+      radius: prevState.radius,
+      attraction: prevState.attraction,
+      rating: prevState.rating
     }
   })
+  }
+
+  updateAppInputs = (state) => {
+    this.setState((prevState) => {
+      return {
+        attractions: prevState.attractions,
+        planner: prevState.planner,
+        city: state.city,
+        radius: state.radius,
+        attraction: state.attraction,
+        rating: state.rating
+      }
+    })
+  }
+
+  handleSuggestTrip = (city, radius, attraction, rating) => {
+    this.setState((prevState) => {
+      return {
+        attractions: prevState.attractions,
+        planner: prevState.planner,
+        city: city,
+        radius: radius,
+        attraction: attraction,
+        rating: rating
+      }
+    })
   }
 
   render() {
@@ -39,8 +75,8 @@ class App extends Component {
         <Route exact path='/' render={() => {
           return (
             <div className='main-info'>
-            <Aside getAllAttractions={this.getAllAttractions}/>
-            <Container/>
+            <Aside updateAppInputs={this.updateAppInputs}/>
+            <Container handleSuggestTrip={this.handleSuggestTrip}/>
           </div>
           )
         }}
@@ -48,8 +84,8 @@ class App extends Component {
        <Route exact path='/attractions' render={() => {
          return (
            <div className='main-info'>
-             <Aside />
-             <Attractions getAllAttractions={this.getAllAttractions}/>
+             <AttractionAside />
+             <Attractions inputData={this.state}/>
            </div>
          )
        }}
@@ -59,6 +95,7 @@ class App extends Component {
            <AttractionDetails 
            id={match.params.id}
            addToPlanner={this.addToPlanner}
+           planner={this.state.planner}
            />
          )
        }}
@@ -66,7 +103,7 @@ class App extends Component {
        <Route exact path='/planner' render={() => {
          return (
            <div className='planner-info'>
-            <Aside />
+            <PlannerAside plannerAttractions={this.state.planner}/>
             <Planner planner={this.state.planner}/>
            </div>
          )
