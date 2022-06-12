@@ -1,0 +1,53 @@
+{
+  "xid": "W206128520",
+  "name": "downtown grand hotel & casino",
+  "address": {
+    "city": "Las Vegas",
+    "road": "North 3rd Street",
+    "house": "Pizza Rock - Downtown",
+    "state": "Nevada",
+    "county": "Clark County",
+    "suburb": "Five Points",
+    "country": "United States of America",
+    "postcode": "89101",
+    "country_code": "us",
+    "house_number": "201",
+    "neighbourhood": "Cultural Corridor"
+  },
+  "rate": "3",
+  "osm": "way/206128520",
+  "bbox": {
+    "lon_min": -115.14198,
+    "lon_max": -115.140998,
+    "lat_min": 36.171243,
+    "lat_max": 36.17238
+  },
+  "wikidata": "Q4261094",
+  "kinds": "skyscrapers,architecture,accomodations,interesting_places,casino,adult,other_hotels",
+  "url": "https://www.booking.com/hotel/us/downtown-grand-an-ascend-collection-member.html",
+  "sources": {
+    "geometry": "osm",
+    "attributes": [
+      "osm",
+      "wikidata"
+    ]
+  },
+  "stars": 4,
+  "otm": "https://opentripmap.com/en/card/W206128520",
+  "wikipedia": "https://en.wikipedia.org/wiki/Downtown%20Grand",
+  "image": "https://commons.wikimedia.org/wiki/File:Downtown_Grand_%28Las_Vegas%2C_Nevada%29.jpg",
+  "preview": {
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Downtown_Grand_%28Las_Vegas%2C_Nevada%29.jpg/400px-Downtown_Grand_%28Las_Vegas%2C_Nevada%29.jpg",
+    "height": 294,
+    "width": 400
+  },
+  "wikipedia_extracts": {
+    "title": "en:Downtown Grand",
+    "text": "The Downtown Grand, formerly the Lady Luck, is a hotel and casino in downtown Las Vegas, Nevada, owned by CIM Group and operated by Fifth Street Gaming. The Downtown Grand is the centerpiece of Downtown3rd, a new neighborhood and entertainment district in downtown Las Vegas.",
+    "html": "<p>The <b>Downtown Grand</b>, formerly the <b>Lady Luck</b>, is a hotel and casino in downtown Las Vegas, Nevada, owned by CIM Group and operated by Fifth Street Gaming. The Downtown Grand is the centerpiece of <b>Downtown3rd</b>, a new neighborhood and entertainment district in downtown Las Vegas.</p>"
+  },
+  "point": {
+    "lon": -115.14142608642578,
+    "lat": 36.17185974121094
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "11379002",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -115.1414261,
+          36.1718597
+        ]
+      },
+      "properties": {
+        "xid": "W206128520",
+        "name": "downtown grand hotel & casino",
+        "dist": 512.24973071,
+        "rate": 3,
+        "osm": "way/206128520",
+        "wikidata": "Q4261094",
+        "kinds": "skyscrapers,architecture,accomodations,interesting_places,casino,adult,other_hotels"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "6963676",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -115.1387253,
+          36.1693306
+        ]
+      },
+      "properties": {
+        "xid": "W501642314",
+        "name": "El Cortez",
+        "dist": 640.4841126,
+        "rate": 7,
+        "osm": "way/501642314",
+        "wikidata": "Q5351073",
+        "kinds": "skyscrapers,architecture,historic,accomodations,historical_places,interesting_places,casino,historic_districts,adult,other_hotels"
+      }
+    }]
+}

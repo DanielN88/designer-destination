@@ -5,7 +5,7 @@
 
 .usage-card {
   text-align: center;
-  height: 19vh;
+  height: 24vh;
   width: 19vw;
   border: 3px solid black;
   border-radius: 10px;
@@ -16,11 +16,11 @@
 .skydiving,
 .beach,
 .location {
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
   margin-top: 8px;
 }
 
 .usage-text {
-  margin: 10px;
+  margin: 2px;
 }

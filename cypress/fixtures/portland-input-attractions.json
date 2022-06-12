@@ -1,0 +1,42 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "14686211",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.6759033,
+          45.5228004
+        ]
+      },
+      "properties": {
+        "xid": "Q1385414",
+        "name": "U.S. Bancorp Tower",
+        "dist": 76.19392218,
+        "rate": 3,
+        "wikidata": "Q1385414",
+        "kinds": "skyscrapers,architecture,interesting_places"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "14922621",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.6761093,
+          45.5224991
+        ]
+      },
+      "properties": {
+        "xid": "Q5169728",
+        "name": "Corbett Brothers Auto Storage Garage",
+        "dist": 105.86780979,
+        "rate": 7,
+        "wikidata": "Q5169728",
+        "kinds": "historic_architecture,architecture,interesting_places,other_buildings_and_structures"
+      }
+    }]
+}
