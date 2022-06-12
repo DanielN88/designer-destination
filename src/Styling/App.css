@@ -4,7 +4,7 @@ html {
 }
 
 main {
-  background-image: url('./assets/background-beach.jpg');
+  background-image: url('../assets/background-beach.jpg');
   background-size: cover;
 }
 

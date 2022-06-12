@@ -17,5 +17,6 @@ aside {
   border-radius: 6px;
   width: 140px;
   height: 38px;
+  cursor: pointer;
 }
 
