@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+# Designer Destination
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Deployment Link
+You can view the deployed project [here]().
 
-## Available Scripts
+## Overview:
+This application allows to users to navigate through a mock travel planner and save attractions they are interested in. The user can choose one of the suggested trips to display attractions around them. They can also manually fill in the inputs to display attractions around the area searched. Once the user has found an attraction they like they can choose to interact with it to display more details and eventually favorite it. Once favorited the attraction will be displayed on users planner page. 
 
-In the project directory, you can run:
+## Application in Action:
 
-### `npm start`
+Searching for attractions and adding to planner:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![destination-planner](https://user-images.githubusercontent.com/92230099/173250735-0a38e13a-be6e-4a62-b0bf-27996552a935.gif)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Displaying error handling:
 
-### `npm test`
+![destination-error-handling](https://user-images.githubusercontent.com/92230099/173250765-033e5c7f-9e62-4300-a6fa-a0aebcc68a2c.gif)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Set Up:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Clone the repository to your local machine.
+- `cd` into the application.
+- Run `npm install` to install the project dependencies.
+- Run `npm start` to see the application.
+  - Paste http://localhost:3000/ into your browser to view.
+  - If you need to stop running the application, run `Control + C`.
+- To view tests, run `npm run cypress`.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## API Used:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The Api used for this project was the [OpenTripMap API](https://opentripmap.io/product).
 
-### `npm run eject`
+All end points used in this project are conviently displayed in their documentation [here](https://opentripmap.io/docs#/).
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+All of their potential catlogue options are displayed [here](https://opentripmap.io/catalog).
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Goals and Challenges:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The biggest challenge for this project was the short time frame for completion and navigating the choosen API. The data was nested in a way that required a great deal of fetch calls. These multiple fetch calls caused many timing issues as well as displayed the limitations of the API. While it did function as expected from my testing the API was limited to a maximum of nine repetitive fetch calls before it failed. This presented new challenges, but was an excellent learning opportunity. 
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Technologies:
 
-## Learn More
+- React
+- Javascript
+- CSS
+- JSX / HTML
+- Router
+- Cypress
+- Restful APIs
+- NPM
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Future Additions:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+In the future, I hope to build out additional user functionality, including the following:
+- Giving user the abilitiy to plan individual trips and save attractions to each one.
+- Allowing users to plan attraction by trip dates and eventually link to booking site.
+- The application is not fully resonsive (ex: on mobile devices) and we would like to make it so in the future.
+- The user should be able to see geo location data on the attractiosn details page. 
+- Implement a loader so that error messages don't dispaly out of timing. 
 
-### Code Splitting
+## Contributors:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- [Daniel Neer](https://github.com/DanielN88)
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
