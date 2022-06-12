@@ -1,0 +1,41 @@
+{
+  "xid": "Q5169728",
+  "name": "Corbett Brothers Auto Storage Garage",
+  "address": {
+    "city": "Portland",
+    "road": "Southwest Oak Street",
+    "state": "Oregon",
+    "county": "Multnomah County",
+    "suburb": "Portland Downtown",
+    "country": "United States of America",
+    "postcode": "97204",
+    "country_code": "us",
+    "house_number": "555"
+  },
+  "rate": "3h",
+  "wikidata": "Q5169728",
+  "kinds": "historic_architecture,architecture,interesting_places,other_buildings_and_structures",
+  "sources": {
+    "geometry": "wikidata",
+    "attributes": [
+      "wikidata"
+    ]
+  },
+  "otm": "https://opentripmap.com/en/card/Q5169728",
+  "wikipedia": "https://en.wikipedia.org/wiki/Corbett%20Brothers%20Auto%20Storage%20Garage",
+  "image": "https://commons.wikimedia.org/wiki/File:Corbett_Brothers_Auto_Storage_Garage_Portland.JPG",
+  "preview": {
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Corbett_Brothers_Auto_Storage_Garage_Portland.JPG/400px-Corbett_Brothers_Auto_Storage_Garage_Portland.JPG",
+    "height": 300,
+    "width": 400
+  },
+  "wikipedia_extracts": {
+    "title": "en:Corbett Brothers Auto Storage Garage",
+    "text": "The Corbett Brothers Auto Storage Garage is a building located in downtown Portland, Oregon, listed on the National Register of Historic Places.National Register of Historic Places listings in Southwest Portland, Oregon",
+    "html": "<p>The <b>Corbett Brothers Auto Storage Garage</b> is a building located in downtown Portland, Oregon, listed on the National Register of Historic Places.</p><ul><li>National Register of Historic Places listings in Southwest Portland, Oregon</li></ul>"
+  },
+  "point": {
+    "lon": -122.67610931396484,
+    "lat": 45.522499084472656
+  }
+}

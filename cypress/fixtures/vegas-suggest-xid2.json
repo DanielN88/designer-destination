@@ -1,0 +1,51 @@
+{
+  "xid": "W501642314",
+  "name": "El Cortez",
+  "address": {
+    "city": "Las Vegas",
+    "road": "North 6th Street",
+    "state": "Nevada",
+    "county": "Clark County",
+    "suburb": "Five Points",
+    "country": "United States of America",
+    "postcode": "89101",
+    "country_code": "us",
+    "house_number": "164",
+    "neighbourhood": "Cultural Corridor"
+  },
+  "rate": "3h",
+  "osm": "way/501642314",
+  "bbox": {
+    "lon_min": -115.13939,
+    "lon_max": -115.138267,
+    "lat_min": 36.168586,
+    "lat_max": 36.169784
+  },
+  "wikidata": "Q5351073",
+  "kinds": "skyscrapers,architecture,historic,accomodations,historical_places,interesting_places,casino,historic_districts,adult,other_hotels",
+  "url": "http://www.elcortezhotelcasino.com",
+  "sources": {
+    "geometry": "osm",
+    "attributes": [
+      "osm",
+      "wikidata"
+    ]
+  },
+  "otm": "https://opentripmap.com/en/card/W501642314",
+  "wikipedia": "https://en.wikipedia.org/wiki/El%20Cortez%20%28Las%20Vegas%29",
+  "image": "https://commons.wikimedia.org/wiki/File:Elcortez02.jpg",
+  "preview": {
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Elcortez02.jpg/300px-Elcortez02.jpg",
+    "height": 400,
+    "width": 300
+  },
+  "wikipedia_extracts": {
+    "title": "en:El Cortez (Las Vegas)",
+    "text": "El Cortez, a hotel and casino, is a relatively small downtown Las Vegas gaming venue a block from the Fremont Street Experience and Las Vegas Boulevard. Slots, table games, and a race and sports book occupy one floor of the main pavilion, at this historic casino. It opened on Fremont Street on November 7, 1941, and is one of the oldest casino-hotel properties in Las Vegas, along with the nearby Golden Gate Hotel and Casino. Primarily Spanish Colonial Revival in style, it reflects a 1952 remodel when the façade was modernized. On February 22, 2013, the structure was placed on the National Register of Historic Places.",
+    "html": "<p><b>El Cortez</b>, a hotel and casino, is a relatively small downtown Las Vegas gaming venue a block from the Fremont Street Experience and Las Vegas Boulevard. Slots, table games, and a race and sports book occupy one floor of the main pavilion, at this historic casino. It opened on Fremont Street on November 7, 1941, and is one of the oldest casino-hotel properties in Las Vegas, along with the nearby Golden Gate Hotel and Casino. Primarily Spanish Colonial Revival in style, it reflects a 1952 remodel when the façade was modernized. On February 22, 2013, the structure was placed on the National Register of Historic Places.</p>"
+  },
+  "point": {
+    "lon": -115.13872528076172,
+    "lat": 36.16933059692383
+  }
+}

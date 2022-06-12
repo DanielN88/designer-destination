@@ -1,0 +1,41 @@
+{
+  "xid": "Q1385414",
+  "name": "U.S. Bancorp Tower",
+  "address": {
+    "city": "Portland",
+    "road": "Southwest 5th Avenue",
+    "state": "Oregon",
+    "county": "Multnomah County",
+    "suburb": "Portland Downtown",
+    "country": "United States of America",
+    "postcode": "97204",
+    "country_code": "us",
+    "house_number": "111"
+  },
+  "rate": "3",
+  "wikidata": "Q1385414",
+  "kinds": "skyscrapers,architecture,interesting_places",
+  "sources": {
+    "geometry": "wikidata",
+    "attributes": [
+      "wikidata"
+    ]
+  },
+  "otm": "https://opentripmap.com/en/card/Q1385414",
+  "wikipedia": "https://en.wikipedia.org/wiki/U.S.%20Bancorp%20Tower",
+  "image": "https://commons.wikimedia.org/wiki/File:USBancorpTowerI5k.jpg",
+  "preview": {
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/USBancorpTowerI5k.jpg/365px-USBancorpTowerI5k.jpg",
+    "height": 400,
+    "width": 365
+  },
+  "wikipedia_extracts": {
+    "title": "en:U.S. Bancorp Tower",
+    "text": "The U.S. Bancorp Tower (also known as the Big Pink) is a 42-story, 163.38 m (536.0 ft) skyscraper in Portland, Oregon. It is the second tallest building in the city after Wells Fargo Center, and with its nearly 69,000 m2 (740,000 sq ft) office space, it is the largest in Oregon in terms of volume. In October 2019, the building was awarded the Leadership in Energy and Environmental Design Platinum certification for environmental sustainability by the U.S. Green Building Council.",
+    "html": "<p>The <b>U.S. Bancorp Tower</b> (also known as the Big Pink) is a 42-story, 163.38&nbsp;m (536.0&nbsp;ft) skyscraper in Portland, Oregon. It is the second tallest building in the city after Wells Fargo Center, and with its nearly 69,000&nbsp;m<sup>2</sup> (740,000&nbsp;sq&nbsp;ft) office space, it is the largest in Oregon in terms of volume. In October 2019, the building was awarded the Leadership in Energy and Environmental Design Platinum certification for environmental sustainability by the U.S. Green Building Council.</p>"
+  },
+  "point": {
+    "lon": -122.6759033203125,
+    "lat": 45.52280044555664
+  }
+}

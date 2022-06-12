@@ -16,12 +16,12 @@ const Usage = () => {
     </div>
     <div className='usage-card'>
     <img className='skydiving' src={skydiving} alt='skydiving'/>
-      <h3>Memorable Experinces</h3>
+      <h3>Memorable Experiences</h3>
       <p className='usage-text'>Browse and plan your perfect trip with attractions off the beaten path.</p>
     </div>
     <div className='usage-card'>
     <img className='location' src={location} alt='location'/>
-      <h3>Plan by location</h3>
+      <h3>Plan by Location</h3>
       <p className='usage-text'>Our high quality search engine lets plan around the radius of your stay</p>
     </div>
   </div>

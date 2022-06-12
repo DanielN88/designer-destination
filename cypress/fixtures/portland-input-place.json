@@ -1,0 +1,9 @@
+{
+  "name": "Portland",
+  "country": "US",
+  "lat": 45.52345,
+  "lon": -122.67621,
+  "population": 632309,
+  "timezone": "America/Los_Angeles",
+  "status": "OK"
+}
