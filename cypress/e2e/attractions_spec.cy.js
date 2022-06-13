@@ -78,7 +78,7 @@ describe('Attractions dashboard user flows', () => {
     });
 
     cy.get('input').click().type('portland')
-    cy.get('select').eq(0).select(1).should('have.value', '500')
+    cy.get('select').eq(0).select(1).should('have.value', '1600')
     cy.get('select').eq(1).select(4).should('have.value', 'architecture')
     cy.get('select').eq(2).select(1).should('have.value', '3')
     cy.get('.form-button').click()
@@ -112,7 +112,7 @@ describe('Attractions dashboard user flows', () => {
 
   it('should display an error if you spell the city name wrong', () => {
     cy.get('input').click().type('blah blah blah')
-    cy.get('select').eq(0).select(1).should('have.value', '500')
+    cy.get('select').eq(0).select(1).should('have.value', '1600')
     cy.get('select').eq(1).select(4).should('have.value', 'architecture')
     cy.get('select').eq(2).select(1).should('have.value', '3')
     cy.get('.form-button').click()
