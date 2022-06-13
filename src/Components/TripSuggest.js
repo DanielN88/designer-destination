@@ -14,7 +14,7 @@ const TripSuggest = (props) => {
         <NavLink to="/attractions">
           <div
             className="suggest-card-one"
-            onClick={() => updateSuggestion("las vegas", 700, "adult", 3)}
+            onClick={() => updateSuggestion("las vegas", 1600, "adult", 3)}
           >
             <p className="suggest-card-text">Las Vegas Nightlife</p>
           </div>
@@ -23,7 +23,7 @@ const TripSuggest = (props) => {
         <NavLink to="/attractions">
           <div
             className="suggest-card-two"
-            onClick={() => updateSuggestion("denver", 700, "historic", 3)}
+            onClick={() => updateSuggestion("denver", 1600, "historic", 3)}
           >
             <p className="suggest-card-text">Denver Historical</p>
           </div>
@@ -32,7 +32,7 @@ const TripSuggest = (props) => {
         <NavLink to="/attractions">
           <div
             className="suggest-card-three"
-            onClick={() => updateSuggestion("miami", 700, "cultural", 3)}
+            onClick={() => updateSuggestion("miami", 1600, "cultural", 3)}
           >
             <p className="suggest-card-text">Miami Culture</p>
           </div>
@@ -42,7 +42,7 @@ const TripSuggest = (props) => {
           <div
             className="suggest-card-four"
             onClick={() =>
-              updateSuggestion("san francisco", 700, "architecture", 3)
+              updateSuggestion("san francisco", 1600, "architecture", 3)
             }
           >
             <p className="suggest-card-text">San Francisco Architecture</p>

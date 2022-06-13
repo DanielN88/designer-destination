@@ -51,9 +51,9 @@ class Form extends Component {
                 onChange={(event) => this.handleChange(event)}
               >
                 <option value="">Radius</option>
-                <option value="500">500</option>
-                <option value="750">750</option>
-                <option value="1000">1000</option>
+                <option value="1600">1 Mile</option>
+                <option value="3200">2 Miles</option>
+                <option value="4800">3 Miles</option>
               </select>
             </label>
           </div>
