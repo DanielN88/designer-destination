@@ -84,7 +84,6 @@ describe('Attractions dashboard user flows', () => {
     cy.get('.form-button').click()
     cy.wait(1000)
     cy.get('.attraction-card .card-title').eq(0).should('have.text', 'U.S. Bancorp Tower')
-    cy.get('.attraction-card .card-title').eq(1).should('have.text', 'Corbett Brothers Auto Storage Garage')
 
   })
   
